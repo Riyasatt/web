@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List |Riyasat</title>
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Chewy&family=Kanit&family=Poppins:wght@300;400;600&family=Roboto:wght@500&family=Sigmar&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="to-do-list">
+            <h2>To-do List <img src="icon.png"></h2>
+            <div class="addElement">
+                <input type="text" class="inputArea" id="inputArea" placeholder="Type your Task">
+                <button class="search" onclick="addTask()">Add</button>
+            </div>
+            <div class="allData">
+                <ul id="listData">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 2</li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

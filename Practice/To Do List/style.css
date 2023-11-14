@@ -1,0 +1,117 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+
+
+}
+.maincontainer{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+.to-do-list{
+    width: 33%;
+    background-color: rgba(255, 255, 255, 0.271);
+    border: 1px solid rgba(255, 255, 255, 0.648);
+    margin: 100px auto 20px;
+    min-height: 250px;
+    border-radius: 15px;
+    padding: 50px 40px;
+}
+
+.to-do-list h2{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: orange;
+    margin-bottom: 30px;
+
+}
+.to-do-list h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.addElement{
+    display: flex;
+    gap: 10px    ;
+    margin-bottom: 30px;
+
+}
+.addElement input{
+    flex: 1;
+    background-color: #e8e7e7;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    
+}
+.addElement button{
+    font-size: 20px;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.addElement button:hover{
+    background-color: rgb(185, 120, 0);
+}
+
+.allData ul{
+    list-style-type: none;
+}
+
+.allData ul li{
+    /* background-color: white; */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 18px;
+    padding-left: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;;
+
+}
+
+.allData ul li::before{
+    content: "";
+    position: absolute;
+    background-image: url(unchecked.png);
+    top: 15px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-position: center;
+}
+.allData ul li.checked {
+    /* text-decoration: line-through; */
+    background-color: rgba(0, 128, 0, 0.301);
+}
+
+.allData ul li.checked::before{
+    background-image: url(checked.png);
+}
+
+.allData ul li span{
+    border-radius: 50%;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    scale: 125%;
+}
+
+.allData ul li span:hover{
+    background-color: rgb(63, 63, 63);
+}
